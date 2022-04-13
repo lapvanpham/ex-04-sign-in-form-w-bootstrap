@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -10,13 +9,14 @@ const signInForm = (
     <div className="form-signin">
       <form>
         <img
-          className="mb-4"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+          // className="mb-4"
+          src="https://img.indiefolio.com/1200x630/filters:format(webp):fill(transparent)/project/thumb/65b29542bb8d7c490423a2d4737199dc.jpg"
           alt=""
-          width="72"
-          height="57"
+          style={{maxWidth: '100%'}}
         />
-        <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+        <p>
+          New Here? <a href="#">Create an account.</a>
+        </p>
         <div className="form-floating">
           <input
             type="email"
@@ -43,14 +43,10 @@ const signInForm = (
         <button className="w-100 btn btn-lg btn-primary" type="submit">
           Sign in
         </button>
-        <p className="mt-5 mb-3 text-muted">© 2017–2021</p>
+        <p className="mt-5 mb-3 text-muted">© 1993–2022</p>
       </form>
     </div>
   </div>
 );
 
-root.render(
-  <React.StrictMode>  
-    {signInForm}
-  </React.StrictMode>
-);
+root.render(<React.StrictMode>{signInForm}</React.StrictMode>);

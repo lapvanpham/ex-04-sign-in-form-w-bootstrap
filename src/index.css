@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+}
+
 .container {
   height: 100vh;
 }
@@ -6,6 +10,8 @@
   width: 330px;
   padding: 15px;
   margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .form-signin .checkbox {
